@@ -8,10 +8,10 @@ private:
 	int numberC;
 
 	int count;
-	int stack[10];
+	int stacks[10];
 public:
 	stack(){
-		stack[10];
+		stacks[10];
 		for(int i=0;i<=9;i++){
 			stack[i] = 0;
 			count = 0;
@@ -19,23 +19,23 @@ public:
 	}
 	void push(int number){
 		assert((number >= 0)&&(count <= 9));
-		stack[count] = number;
+		stacks[count] = number;
 		count++;
 	}
 	void pop(){
-		std::cout << stack[count] << '\0';
+		std::cout << stacks[count] << '\0';
 		assert((count >= 0)&&(count <= 9));
-		stack[count] = 0;
+		stacks[count] = 0;
 		count--;
 	}
 	void push(std::string operand){
 		assert(count >= 1);
 		if(operand=="SUB"){
-			stack[count-1] = stack[count] - stack[count-1];
+			stacks[count-1] = stacks[count] - stacks[count-1];
 			pop();
 		}
 		if(operand == "DIV"){
-			stack[count-1] = stack[count]/stack[count-1];
+			stacks[count-1] = stacks[count]/stack[count-1];
 			pop();
 		}
 		;

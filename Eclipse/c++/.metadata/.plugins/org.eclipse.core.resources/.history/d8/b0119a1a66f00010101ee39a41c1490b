@@ -1,0 +1,16 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+	string satz = "Schon wieder was dazugelernt!";
+	string satz2;
+	string satz3;
+	cout << satz << satz.length();
+	getline(satz2, cin);
+	getline(satz3, cin);
+	satz2 += " * " + satz3;
+	cout << satz2 << endl;
+	return 0;
+}
+

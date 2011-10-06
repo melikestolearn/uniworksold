@@ -1,0 +1,5 @@
+static int size = 20;
+public class STACK {
+	
+	int stack[size];
+}

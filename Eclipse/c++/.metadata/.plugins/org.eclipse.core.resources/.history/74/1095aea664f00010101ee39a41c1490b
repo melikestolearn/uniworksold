@@ -1,0 +1,25 @@
+//Ein Programm mit fehlern !
+
+#include <iostream>//, <string>
+#include <cstdlib>
+
+using namespace std;
+
+
+int main(){
+	string meldund = "\nAus fEHLERN WIRD MAN kLUG!";
+	cout << meldung << endl;
+
+	int len = length( meldung);
+	cout << "Die Länge des Strings: " << length() << endl;
+
+	// Und noch eine zufallszahl:
+
+	int a, b;
+	a = srand(12.5);
+	b = rand ( a);
+	cout << "\n Zufallszahl: " << b << endl;
+
+	return 0;
+}
+

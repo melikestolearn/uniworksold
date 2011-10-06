@@ -8,6 +8,13 @@
 		<list key="ENABLED_TRANSFERS">
 		</list>
 	</section>
+	<section name="SaveAsDialogSettings">
+		<item value="615" key="DIALOG_WIDTH"/>
+		<item value="29" key="DIALOG_Y_ORIGIN"/>
+		<item value="548" key="DIALOG_HEIGHT"/>
+		<item value="177" key="DIALOG_X_ORIGIN"/>
+		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+	</section>
 	<section name="NewWizardAction">
 		<item value="org.eclipse.cdt.ui.wizards.NewCWizard1" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">

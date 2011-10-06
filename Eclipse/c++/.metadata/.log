@@ -173,3 +173,164 @@ Command-line arguments:  -os linux -ws gtk -arch x86 -data /home/tobi/uniworks/E
 
 !ENTRY org.eclipse.cdt.core 1 0 2011-10-06 17:18:17.824
 !MESSAGE Indexed 'stack-maschine' (0 sources, 77 headers) in 4.37 sec: 2,129 declarations; 2,374 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+!SESSION 2011-10-06 23:10:02.445 -----------------------------------------------
+eclipse.buildId=M20100211-1343
+java.version=1.6.0_20
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86 -data /home/tobi/uniworks/Eclipse/c++
+
+!ENTRY org.eclipse.cdt.launch 4 104 2011-10-06 23:22:52.505
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: /home/tobi/uniworks/Eclipse/c++/Book lectures/Debug/Booklectures not found
+	at org.eclipse.cdt.launch.AbstractCLaunchDelegate.verifyProgramPath(AbstractCLaunchDelegate.java:455)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.runLocalApplication(LocalCDILaunchDelegate.java:83)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.launch(LocalCDILaunchDelegate.java:69)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:853)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:866)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1069)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.launch 4 104 2011-10-06 23:22:52.506
+!MESSAGE /home/tobi/uniworks/Eclipse/c++/Book lectures/Debug/Booklectures not found
+!STACK 0
+java.io.FileNotFoundException: /home/tobi/uniworks/Eclipse/c++/Book lectures/Debug/Booklectures not found
+	at org.eclipse.cdt.launch.AbstractCLaunchDelegate.verifyProgramPath(AbstractCLaunchDelegate.java:455)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.runLocalApplication(LocalCDILaunchDelegate.java:83)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.launch(LocalCDILaunchDelegate.java:69)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:853)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:866)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1069)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.ui 4 0 2011-10-06 23:29:43.366
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.ClassCastException: org.eclipse.ui.internal.views.markers.CachedMarkerBuilder cannot be cast to org.eclipse.ui.IEditorInput
+	at org.eclipse.cdt.internal.ui.cview.CView.show(CView.java:1069)
+	at org.eclipse.ui.internal.ShowInHandler.execute(ShowInHandler.java:79)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:294)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:476)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.ui.internal.handlers.HandlerService.executeCommand(HandlerService.java:169)
+	at org.eclipse.ui.internal.handlers.SlaveHandlerService.executeCommand(SlaveHandlerService.java:241)
+	at org.eclipse.ui.internal.handlers.SlaveHandlerService.executeCommand(SlaveHandlerService.java:241)
+	at org.eclipse.ui.menus.CommandContributionItem.handleWidgetSelection(CommandContributionItem.java:770)
+	at org.eclipse.ui.menus.CommandContributionItem.access$10(CommandContributionItem.java:756)
+	at org.eclipse.ui.menus.CommandContributionItem$5.handleEvent(CommandContributionItem.java:746)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1176)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3493)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3112)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2405)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2369)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2221)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:500)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:493)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:113)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:194)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:368)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:559)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:514)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1311)
+
+!ENTRY org.eclipse.debug.core 4 125 2011-10-06 23:30:42.770
+!MESSAGE Error logged from Debug Core: 
+!STACK 0
+java.io.IOException: read error
+	at org.eclipse.cdt.utils.spawner.SpawnerInputStream.read0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerInputStream.read(SpawnerInputStream.java:66)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:273)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:334)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.read(OutputStreamMonitor.java:144)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.access$1(OutputStreamMonitor.java:134)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor$1.run(OutputStreamMonitor.java:207)
+	at java.lang.Thread.run(Thread.java:636)
+!SESSION 2011-10-06 23:41:19.280 -----------------------------------------------
+eclipse.buildId=M20100211-1343
+java.version=1.6.0_20
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.debug.core 4 125 2011-10-06 23:51:13.985
+!MESSAGE Error logged from Debug Core: 
+!STACK 0
+java.io.IOException: read error
+	at org.eclipse.cdt.utils.spawner.SpawnerInputStream.read0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerInputStream.read(SpawnerInputStream.java:66)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:273)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:334)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.read(OutputStreamMonitor.java:144)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.access$1(OutputStreamMonitor.java:134)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor$1.run(OutputStreamMonitor.java:207)
+	at java.lang.Thread.run(Thread.java:636)
+
+!ENTRY org.eclipse.debug.core 4 125 2011-10-06 23:57:19.381
+!MESSAGE Error logged from Debug Core: 
+!STACK 0
+java.io.IOException: read error
+	at org.eclipse.cdt.utils.spawner.SpawnerInputStream.read0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerInputStream.read(SpawnerInputStream.java:66)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:273)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:334)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.read(OutputStreamMonitor.java:144)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.access$1(OutputStreamMonitor.java:134)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor$1.run(OutputStreamMonitor.java:207)
+	at java.lang.Thread.run(Thread.java:636)
+
+!ENTRY org.eclipse.debug.core 4 125 2011-10-06 23:58:42.413
+!MESSAGE Error logged from Debug Core: 
+!STACK 0
+java.io.IOException: read error
+	at org.eclipse.cdt.utils.spawner.SpawnerInputStream.read0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerInputStream.read(SpawnerInputStream.java:66)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:273)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:334)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.read(OutputStreamMonitor.java:144)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.access$1(OutputStreamMonitor.java:134)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor$1.run(OutputStreamMonitor.java:207)
+	at java.lang.Thread.run(Thread.java:636)
+
+!ENTRY org.eclipse.debug.core 4 125 2011-10-06 23:59:32.963
+!MESSAGE Error logged from Debug Core: 
+!STACK 0
+java.io.IOException: read error
+	at org.eclipse.cdt.utils.spawner.SpawnerInputStream.read0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerInputStream.read(SpawnerInputStream.java:66)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:273)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:334)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.read(OutputStreamMonitor.java:144)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.access$1(OutputStreamMonitor.java:134)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor$1.run(OutputStreamMonitor.java:207)
+	at java.lang.Thread.run(Thread.java:636)
+
+!ENTRY org.eclipse.debug.core 4 125 2011-10-07 00:00:12.449
+!MESSAGE Error logged from Debug Core: 
+!STACK 0
+java.io.IOException: read error
+	at org.eclipse.cdt.utils.spawner.SpawnerInputStream.read0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerInputStream.read(SpawnerInputStream.java:66)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:273)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:334)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.read(OutputStreamMonitor.java:144)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.access$1(OutputStreamMonitor.java:134)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor$1.run(OutputStreamMonitor.java:207)
+	at java.lang.Thread.run(Thread.java:636)

@@ -1,0 +1,20 @@
+#include <iostream>
+#include<math.h>
+
+using namespace std;
+
+int number1 = 4;
+float number2 = 12.25;
+float number3 = 0.0121;
+
+/*int main(){
+	cout << "Zahl" << "\t\t\t" << "Wurzel" << endl << endl;
+	cout << number1 << "\t\t\t" << sqrt(number1) << endl;
+	cout << number2 << "\t\t\t" << sqrt(number2) << endl;
+	cout << number3 << "\t\t\t" << sqrt(number3) << endl;
+	int number4;
+	cin >> number4;
+	cout << number4 << "\t\t\t" << sqrt(number4) << endl;
+	return 0;
+}
+*/

@@ -1,0 +1,14 @@
+
+
+
+public class STACK {
+	private static final int SIZE = 20;
+	private int stack[] = new int[SIZE];
+	private int count;
+	public STACK(){}
+	
+	public void push(int amount){
+		stack[count] = amount;
+		count++;
+	}
+}
