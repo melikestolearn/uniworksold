@@ -1,8 +1,0 @@
-
-public class Player {
-	int number;
-		Player(int number){
-			if(number==1)
-				
-		}
-}

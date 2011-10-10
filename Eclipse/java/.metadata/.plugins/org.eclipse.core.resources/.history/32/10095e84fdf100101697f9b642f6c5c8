@@ -1,9 +1,0 @@
-
-public class Player {
-	int number;
-	char symbol;
-		Player(int number){
-			if(number==1)
-				symbol = 'O';
-		}
-}

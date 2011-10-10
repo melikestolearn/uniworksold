@@ -1,5 +1,0 @@
-
-public class STACK {
-	static final const int size = 20;
-	int stack[size];
-}

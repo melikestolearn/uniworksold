@@ -1,9 +1,0 @@
-
-
-
-public class STACK {
-	private static final int size = 20;
-	private int stack[] = new int[size];
-	public STACK(){}
-	
-}

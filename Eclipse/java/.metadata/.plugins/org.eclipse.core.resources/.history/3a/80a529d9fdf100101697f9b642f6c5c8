@@ -1,7 +1,0 @@
-
-public class TicTacToe {
-	char[] fields = new char[9];
-		public TicTacToe(){
-			System.out.println(" | | \n_|_|_\n | | \n_|_|_\n | | \n | | ");
-		}
-}

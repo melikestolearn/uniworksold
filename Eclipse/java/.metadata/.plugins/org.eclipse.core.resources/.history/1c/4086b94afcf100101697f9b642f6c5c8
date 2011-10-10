@@ -1,9 +1,0 @@
-
-public class tictactoe {
-		public tictactoe(){
-			System.out.println(" | | \n_|_|_\n | | \n_|_|_\n | | \n | | ");
-		}
-		public static void main(){
-			tictactoe();
-		}
-}
