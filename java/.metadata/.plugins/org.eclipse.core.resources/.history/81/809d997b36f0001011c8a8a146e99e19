@@ -1,0 +1,8 @@
+
+public class STACK {
+	
+	int stack[20];
+	STACK(){
+		 
+	}
+}

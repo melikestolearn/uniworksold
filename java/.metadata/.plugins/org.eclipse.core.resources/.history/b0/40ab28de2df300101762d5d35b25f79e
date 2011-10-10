@@ -1,0 +1,15 @@
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+
+/*
+ * liest von stdin ein und schreibt in ein file
+ */
+public class StdinToFile {
+	public static void main(String[] args){
+		InputStream is = System.in;
+		InputStreamReader isr = new InputStreamReader(is);
+	BufferedReader reader = new BufferedReader(isr);	
+	}
+
+}

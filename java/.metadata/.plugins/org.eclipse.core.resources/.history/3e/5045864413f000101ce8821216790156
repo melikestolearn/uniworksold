@@ -1,0 +1,15 @@
+package objects;
+
+public class Fighter {
+	private int health;
+	private int power;
+	
+	public Fighter(){
+		health = 100;
+		power = 100;
+	}
+	public void hit(int damage){
+		health = health-damage;
+	}
+	
+} 

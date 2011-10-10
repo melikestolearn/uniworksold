@@ -1,0 +1,6 @@
+package entities.constants;
+
+public class Constants {
+	private int SWORD_HIT_DAMAGE = 20;
+	private int STAB_HIT_DAMAGE = 10;
+}

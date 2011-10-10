@@ -1,0 +1,9 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+	string satz = "Schon wieder was dazugelernt!";
+	cout << satz << satz.length();
+}
+

@@ -1,0 +1,8 @@
+
+public class STACK {
+	const int size = 20;
+	int stack[size];
+	STACK(){
+		 
+	}
+}

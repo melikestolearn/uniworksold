@@ -1,0 +1,43 @@
+#include<assert.h>
+#include<iostream>
+class stack{
+private:
+
+	int numberA;
+	int numberB;
+	int numberC;
+
+	int count;
+	const int STACK_SIZE = 10;
+	int stack[STACK_SIZE];
+public:
+	stack(){
+		for(int i = 0;i<=STACK_SIZE-1;i++){
+			stack[i] = 0;
+		count = 0;
+		}
+	}
+	void push(int number){
+		assert((number >= 0)&&(count <= STACK_SIZE-1));
+		stack[count] = number;
+		count++;
+	}
+	void pop(){
+		std::cout << stack[count] << endl;
+		assert((ount >= 0)&&(count <= STACK_SIZE-1));
+		stack[count] = 0;
+		count--;
+	}
+	void push(std::string operand){
+		assert(count >= 1);
+		if(operand=="SUB"){
+			stack[count-1] = stack[count] - stack[count-1];
+			pop();
+		}
+		 if(operand == "DIV"){
+			stack[count-1] = stack[count]/stack[count-1];
+			pop();
+		 }
+	;
+
+}

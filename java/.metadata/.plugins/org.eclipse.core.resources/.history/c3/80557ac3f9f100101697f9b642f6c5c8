@@ -1,0 +1,20 @@
+package entities;
+
+import entities.constants.Constants;
+//Weapons in the game hold by the player
+public class Weapon extends Entity{
+	private int hitPower;
+		/*
+		 * param weaponnumber 1 sword 2 stab
+		 */
+		public Weapon(int weaponnumber){
+			if(weaponnumber == 1){
+				super(20,20);
+				hitPower = Constants.SWORD_HIT_DAMAGE;
+			}
+			else
+				super(20,20);
+			hitPower = Constants.STAB_HIT_DAMAGE;
+		}
+}
+

@@ -1,0 +1,19 @@
+#include <iostream>
+
+
+void pause(); // Prototyp
+using namespace std;
+
+int main(){
+	cout << endl << "Lieber Leser,"
+			<< endl << "gönnen Sie"
+			<< "sich endlich eine";
+	pause();
+	cout << "!" << endl;
+	return 0;
+}
+
+void pause(){
+	cout << "Pause";
+}
+
