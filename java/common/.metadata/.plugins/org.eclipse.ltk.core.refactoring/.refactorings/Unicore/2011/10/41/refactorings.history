@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;choose&apos; in &apos;main.Base.estCon()&apos; to &apos;choosed&apos;&#x0D;&#x0A;- Original project: &apos;Unicore&apos;&#x0D;&#x0A;- Original element: &apos;main.Base.estCon().choose&apos;&#x0D;&#x0A;- Renamed element: &apos;choose&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;choose&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;main{Base.java[Base~estCon@choose!452!474!460!465!Z!0!false" name="choosed" references="true" stamp="1318275091679" version="1.0"/>
+</session>
