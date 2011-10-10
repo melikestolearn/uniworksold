@@ -5,8 +5,12 @@
 import java.io.IOException;
 import java.net.*;
 public class TicServer {
+	private ServerSocket ss;
 	TicServer() throws IOException {
-		ServerSocket SS = new ServerSocket(2000);
-	
+		ss = new ServerSocket(2000);
+
+	}
+	public ServerSocket getServer(){
+		return ss;
 	}
 }
