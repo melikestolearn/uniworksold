@@ -1,0 +1,6 @@
+
+public class run {
+	public static void mainpimmel(){
+		tictactoe game = new tictactoe();
+	}
+}

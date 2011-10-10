@@ -1,0 +1,7 @@
+/*
+ * Server for the TicTacToe game
+ * will wait for 2 players connected and then running the game
+ */
+public class TicServer {
+
+}

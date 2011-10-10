@@ -1,0 +1,39 @@
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
+import java.net.ServerSocket;
+
+
+/*
+ * liest von stdin ein und schreibt in ein file
+ */
+public class StdinToFile {
+	public static void main(String[] args) throws IOException{
+		ServerSocket ss = new ServerSocket(80);
+		Socket s = ss.accept();
+		InputStream is = System.in;
+		InputStreamReader isr = new InputStreamReader(is);
+		BufferedReader reader = new BufferedReader(isr);
+		
+		OutputStream os = ;
+		OutputStreamWriter osr = new OutputStreamWriter(os);
+		PrintWriter pr = new PrintWriter(osr);
+		int b = is.read();
+		while(b != -1){
+			os.write(b);
+			b = is.read();
+			
+		}
+		is.close();
+		os.close();
+		File outputFile = new File ("home/usr/documents/uniworks/Eclipse/java/U1_Aufg2_Gruppe_8/text.txt");
+	
+	
+	}
+
+}

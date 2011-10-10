@@ -1,0 +1,6 @@
+
+public class tictactoe {
+		public tictactoe(){
+			System.out.println(" | | \n_|_|_\n | | \n_|_|_");
+		}
+}

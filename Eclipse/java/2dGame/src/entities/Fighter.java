@@ -25,6 +25,7 @@ public class Fighter extends Entity{
 			power = power + increase;
 	}
 	public void powerdown(final int decrease){
+		
 		if(power - decrease < 0)
 			power = 0;
 		else

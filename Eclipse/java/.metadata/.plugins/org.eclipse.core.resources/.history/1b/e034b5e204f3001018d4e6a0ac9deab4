@@ -1,0 +1,11 @@
+/*
+ * Server for the TicTacToe game
+ * will wait for 2 players connected and then running the game
+ */
+import java.net.*;
+public class TicServer {
+	TicServer() throws SocketException(){
+	ServerSocket SS = new ServerSocket(2000);
+	
+	}
+}
