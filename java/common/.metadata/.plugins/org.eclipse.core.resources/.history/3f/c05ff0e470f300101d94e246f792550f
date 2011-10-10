@@ -1,0 +1,38 @@
+package connection;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.net.UnknownHostException;
+
+public class Connector {
+
+	
+	private Socket friendSocket;
+	
+	private final int defaultPort = 810;
+	private int realPort;
+
+	private InputStream input;
+	private OutputStream output;
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	public void host() throws IOException {
+		ServerSocket myServer = new ServerSocket(defaultPort);
+		
+		friendSocket = myServer.accept();
+	}
+	
+	public void connect(String hostname) throws UnknownHostException, IOException {
+		friendSocket = new Socket(hostname, defaultPort);
+		
+		friendSocket.getOutputStream().write(1);
+	}
+
+}
