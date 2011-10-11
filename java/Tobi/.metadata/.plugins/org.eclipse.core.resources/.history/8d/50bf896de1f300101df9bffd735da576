@@ -1,10 +1,9 @@
+/*
+ * Server for the TicTacToe game
+ * will wait for 2 players connected and then running the game
+ */
 import java.io.IOException;
 import java.net.*;
-
-/*
- * This class holds an Server for the TicTacToe game
- * The Server is using port 2000 as default
- */
 public class TicServer {
 	private ServerSocket ss;
 	TicServer() throws IOException {
