@@ -10,8 +10,5 @@ public class TicServer {
 	private ServerSocket ss;
 	TicServer() throws IOException {
 		ss = new ServerSocket(2000);
-		Socket s = ss.accept();
-	
 	}
 }
-
