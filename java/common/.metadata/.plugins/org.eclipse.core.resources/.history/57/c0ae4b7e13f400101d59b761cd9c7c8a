@@ -1,0 +1,90 @@
+package gui.console;
+
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+
+import javax.swing.JEditorPane;
+import javax.swing.JFrame;
+import javax.swing.JScrollPane;
+import javax.swing.text.BadLocationException;
+import javax.swing.text.Document;
+
+/**
+ *
+ */
+public class Console extends JFrame{
+    
+	private int lastCommandPosition = 0;
+	
+	private JEditorPane console;
+    private JScrollPane jScrollPane1;
+    private Document text;
+    
+    /** Creates new form Console */
+    public Console() {
+        initComponents();
+        text = console.getDocument();
+    }
+
+    private void initComponents() {
+
+        jScrollPane1 = new JScrollPane();
+        console = new JEditorPane();
+        
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Console");
+        setResizable(false);
+
+        jScrollPane1.setName("jScrollPane1");
+        
+        console.setName("console");
+        jScrollPane1.setViewportView(console);
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 307, Short.MAX_VALUE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 361, Short.MAX_VALUE)
+        );
+
+        pack();
+        
+        console.addKeyListener(new KeyAdapter() {
+            public void keyTyped(KeyEvent evt) {		//FIIIIIX!!!
+                try {
+					consoleKeyTyped(evt);
+				} catch (BadLocationException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+            }
+        });
+    }
+	private void consoleKeyTyped(KeyEvent evt) throws BadLocationException {
+    	if(evt.getKeyCode()==KeyEvent.VK_ENTER) {
+    		int tmpPosition = lastCommandPosition;
+    		lastCommandPosition = console.getDocument().getLength();
+    		console.getText(lastCommandPosition, console.getDocument().getLength()-tmpPosition);
+    		console.
+    	}
+    }
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+
+            public void run() {
+                new Console().setVisible(true);
+            }
+        });
+    }
+
+   
+
+}
