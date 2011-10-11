@@ -1,32 +1,36 @@
 package main;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.net.UnknownHostException;
-
 import connection.Connector;
 
+/** This is the base of the program.
+ * Every part build up here.
+ */
 public class Base {
 	private Connector connector;
 	
 	public Base() {
-		connector = new Connector();
+		connector = new Connector(this, System.in);
 	}
 	
-	private void estCon() throws UnknownHostException, IOException {
-		String in1 = new BufferedReader(new InputStreamReader(System.in)).readLine();
+	public void estCon() throws Exception {
+		String in1;
 		
-		boolean choosed = false;
-		while(!choosed) {
+		boolean gotInput = false;
+		while(!gotInput) {
+			in1 = connector.readLineFromKeyboard();
 			String[] tokens = in1.split("\\s+");
-			if((tokens[0].toLowerCase()).equals("connect")) {
+			String com = tokens[0].toLowerCase();
+			
+			if(com.equals("connect")) {
+				if(tokens.length<2)
+					throw new Exception("Illegal command.");
+				
 				connector.connect(tokens[1]);
-				choosed = true;
+				gotInput = true;
 			}
-			else if(tokens[0].toLowerCase().equals("host")) {
+			else if(com.equals("host")) {
 				connector.host();
-				choosed = true;
+				gotInput = true;
 			}
 		}
 		

@@ -1,14 +1,19 @@
 package connection;
 
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.UnknownHostException;
 
+import main.Base;
+
 public class Connector {
 
+	private final Base base;
 	
 	private Socket friendSocket;
 	
@@ -18,8 +23,12 @@ public class Connector {
 	private InputStream input;
 	private OutputStream output;
 	
-	public Connector() {
+	private BufferedReader myKeyboardReader;
+	
+	public Connector(Base b, InputStream myInput) {
 		defaultPort = 810;
+		myKeyboardReader = new BufferedReader(new InputStreamReader(myInput));
+		base = b;
 	}
 	
 	public void host() throws IOException {
@@ -32,6 +41,9 @@ public class Connector {
 		friendSocket = new Socket(hostname, defaultPort);
 		
 		friendSocket.getOutputStream().write(1);
+	}
+	public String readLineFromKeyboard() throws IOException {
+		return myKeyboardReader.readLine();
 	}
 
 }
