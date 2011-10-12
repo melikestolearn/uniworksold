@@ -29,17 +29,27 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
+<part id="2"/>
+<part id="3"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TicServer.java" partName="TicServer.java" path="/home/tobi/uniworks/java/Tobi/tictactoe/src/TicServer.java" title="TicServer.java" tooltip="tictactoe/src/TicServer.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/tictactoe/src/TicServer.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="271" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TicServer.java" partName="TicServer.java" path="/home/tobi/uniworks/java/Tobi/tictactoe/src/servergame/TicServer.java" title="TicServer.java" tooltip="tictactoe/src/servergame/TicServer.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/tictactoe/src/servergame/TicServer.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="290" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Client.java" partName="Client.java" path="/home/tobi/uniworks/java/Tobi/tictactoe/src/Client.java" title="Client.java" tooltip="tictactoe/src/Client.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/tictactoe/src/Client.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="638" selectionTopPixel="15"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Client.java" partName="Client.java" path="/home/tobi/uniworks/java/Tobi/tictactoe/src/player/Client.java" title="Client.java" tooltip="tictactoe/src/player/Client.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/tictactoe/src/player/Client.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="677" selectionTopPixel="51"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Player.java" partName="Player.java" path="/home/tobi/uniworks/java/Tobi/tictactoe/src/player/Player.java" title="Player.java" tooltip="tictactoe/src/player/Player.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/tictactoe/src/player/Player.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="279" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Run.java" partName="Run.java" path="/home/tobi/uniworks/java/Tobi/tictactoe/src/player/Run.java" title="Run.java" tooltip="tictactoe/src/player/Run.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/tictactoe/src/player/Run.java"/>
+<editorState selectionHorizontalPixel="76" selectionLength="0" selectionOffset="230" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -93,7 +103,7 @@
 <view id="org.eclipse.jdt.ui.SourceView" partName="Declaration"/>
 <view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jdt.internal.ui.JavaPerspectiveFactory" id="org.eclipse.jdt.ui.JavaPerspective" label="Java"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -211,6 +221,13 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/tictactoe/src/Player.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/tictactoe/src/TicServer.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/tictactoe/src/Client.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/tictactoe/src/Client.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/tictactoe/src/Player.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/tictactoe/src/Run.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/tictactoe/src/servergame/TicServer.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/tictactoe/src/player/Player.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/tictactoe/src/player/Run.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/tictactoe/src/player/Client.java"/>
 </editors>
 <item historyLabel="TicServer.java" index="0">
 <position info="not_deleted" x="3" y="0"/>
@@ -281,8 +298,71 @@
 <item historyLabel="Client.java" index="4">
 <position info="not_deleted" x="638" y="0"/>
 </item>
-<item active="true" historyLabel="TicServer.java" index="3">
+<item historyLabel="TicServer.java" index="3">
 <position info="not_deleted" x="271" y="0"/>
+</item>
+<item historyLabel="Client.java" index="5">
+<position info="not_deleted" x="654" y="0"/>
+</item>
+<item historyLabel="Client.java" index="5">
+<position info="not_deleted" x="382" y="0"/>
+</item>
+<item historyLabel="TicServer.java" index="3">
+<position info="not_deleted" x="273" y="0"/>
+</item>
+<item historyLabel="Client.java" index="5">
+<position info="not_deleted" x="661" y="0"/>
+</item>
+<item historyLabel="Player.java" index="6">
+<position info="not_deleted" x="141" y="0"/>
+</item>
+<item historyLabel="Run.java" index="7">
+<position info="not_deleted" x="104" y="0"/>
+</item>
+<item historyLabel="TicServer.java" index="3">
+<position info="not_deleted" x="270" y="0"/>
+</item>
+<item historyLabel="Run.java" index="7">
+<position info="not_deleted" x="104" y="0"/>
+</item>
+<item historyLabel="Run.java" index="7">
+<position info="not_deleted" x="221" y="0"/>
+</item>
+<item historyLabel="Run.java" index="7">
+<position info="not_deleted" x="257" y="0"/>
+</item>
+<item historyLabel="TicServer.java" index="8">
+<position info="not_deleted" x="270" y="0"/>
+</item>
+<item historyLabel="TicServer.java" index="8">
+<position info="not_deleted" x="291" y="0"/>
+</item>
+<item historyLabel="Player.java" index="9">
+<position info="not_deleted" x="147" y="0"/>
+</item>
+<item historyLabel="Player.java" index="9">
+<position info="not_deleted" x="163" y="0"/>
+</item>
+<item historyLabel="Run.java" index="10">
+<position info="not_deleted" x="249" y="0"/>
+</item>
+<item historyLabel="Run.java" index="10">
+<position info="not_deleted" x="265" y="0"/>
+</item>
+<item historyLabel="Client.java" index="11">
+<position info="not_deleted" x="661" y="0"/>
+</item>
+<item historyLabel="Client.java" index="11">
+<position info="not_deleted" x="677" y="0"/>
+</item>
+<item historyLabel="TicServer.java" index="8">
+<position info="not_deleted" x="290" y="0"/>
+</item>
+<item historyLabel="Player.java" index="9">
+<position info="not_deleted" x="163" y="0"/>
+</item>
+<item active="true" historyLabel="Player.java" index="9">
+<position info="not_deleted" x="279" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -301,6 +381,9 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Run.java" tooltip="tictactoe/src/Run.java">
+<persistable path="/tictactoe/src/Run.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Player.java" tooltip="tictactoe/src/Player.java">
 <persistable path="/tictactoe/src/Player.java"/>
 </file>
