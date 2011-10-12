@@ -69,10 +69,6 @@
 <views>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>
-<category IMemento.internal.id="Warnings (7 items)"/>
-<category IMemento.internal.id="Errors"/>
-</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -115,9 +111,7 @@
 </view>
 <view id="org.eclipse.mylyn.tasks.ui.views.tasks" partName="Task List">
 <viewState linkWithEditor="true" presentation="org.eclipse.mylyn.tasks.ui.categorized">
-<sorter groupBy="CATEGORY_QUERY">
-<sorter>
-<sort0 sortDirection="1" sortKey="PRIORITY"/>
+<sorter groupBy="CATEGORY_QUERY">&#x0A;<sorter>&#x0A;<sort0 sortDirection="1" sortKey="PRIORITY"/>
 <sort1 sortDirection="1" sortKey="RANK"/>
 <sort2 sortDirection="1" sortKey="DATE_CREATED"/>
 <sort3 sortDirection="1" sortKey="NONE"/>
@@ -275,19 +269,9 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Unicore/src/console/Console.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Unicore/src/console/ConsoleCommand.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Unicore/src/main/Main.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Unicore/src/gui/console/ConsoleGui.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Unicore/src/console/ConsoleCommand.java"/>
 </editors>
-<item historyLabel="ConsoleGui.java" index="0">
-<position info="not_deleted" x="345" y="0"/>
-</item>
-<item historyLabel="ConsoleGui.java" index="0">
-<position info="not_deleted" x="489" y="0"/>
-</item>
-<item historyLabel="ConsoleGui.java" index="0">
-<position info="not_deleted" x="456" y="0"/>
-</item>
-<item historyLabel="ConsoleGui.java" index="0">
-<position info="not_deleted" x="440" y="7"/>
-</item>
 <item historyLabel="ConsoleGui.java" index="0">
 <position info="not_deleted" x="682" y="0"/>
 </item>
@@ -423,8 +407,20 @@
 <item historyLabel="ConsoleGui.java" index="0">
 <position info="not_deleted" x="2619" y="0"/>
 </item>
-<item active="true" historyLabel="Console.java" index="2">
+<item historyLabel="Console.java" index="2">
 <position info="not_deleted" x="217" y="0"/>
+</item>
+<item historyLabel="ConsoleGui.java" index="5">
+<position info="not_deleted" x="2619" y="0"/>
+</item>
+<item historyLabel="Console.java" index="2">
+<position info="not_deleted" x="251" y="0"/>
+</item>
+<item historyLabel="ConsoleCommand.java" index="6">
+<position info="not_deleted" x="72" y="0"/>
+</item>
+<item active="true" historyLabel="Console.java" index="2">
+<position info="not_deleted" x="251" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -432,12 +428,6 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="left"/>
-</trimArea>
-<trimArea IMemento.internal.id="131072">
-<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@42bfccfc"/>
-</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 <trimItem IMemento.internal.id="org.eclipse.mylyn.tasks.ui.trim.container"/>
@@ -446,7 +436,6 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
-<trimItem IMemento.internal.id="bottom"/>
 </trimArea>
 </trimLayout>
 </window>
