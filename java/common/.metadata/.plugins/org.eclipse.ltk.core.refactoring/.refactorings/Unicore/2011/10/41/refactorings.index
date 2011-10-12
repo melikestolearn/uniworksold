@@ -2,3 +2,6 @@
 1318335255610	Rename local variable 'choosed'
 1318339872416	Delete element
 1318344127677	Rename type 'Console'
+1318421472162	Rename local variable 'lastLine'
+1318421501880	Rename local variable 'endLine'
+1318422800129	Rename field 'console'

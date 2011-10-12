@@ -3,12 +3,14 @@ package gui.console;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
+import javax.swing.GroupLayout;
 import javax.swing.JFrame;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.text.BadLocationException;
 
 import main.Base;
+import console.Console;
 
 /**
  *
@@ -19,19 +21,22 @@ public class ConsoleGui extends JFrame {
 	
 	private final Base base;
 	
-	private JTextArea console;
+	private final Console console;
+	
+	private JTextArea consoleArea;
     private JScrollPane jScrollPane1;
     
     /** Creates new form Console */
     public ConsoleGui(Base b) {
         initComponents();
         base = b;
+        console = base.getConsole();
     }
 
     private void initComponents() {
 
         jScrollPane1 = new JScrollPane();
-        console = new JTextArea();
+        consoleArea = new JTextArea();
         
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Console");
@@ -39,23 +44,23 @@ public class ConsoleGui extends JFrame {
 
         jScrollPane1.setName("jScrollPane1");
         
-        console.setName("console");
-        jScrollPane1.setViewportView(console);
+        consoleArea.setName("consoleArea");
+        jScrollPane1.setViewportView(consoleArea);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        GroupLayout layout = new GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 307, Short.MAX_VALUE)
+            layout.createParallelGroup(GroupLayout.Alignment.LEADING)
+            .addComponent(jScrollPane1, GroupLayout.DEFAULT_SIZE, 307, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 361, Short.MAX_VALUE)
+            layout.createParallelGroup(GroupLayout.Alignment.LEADING)
+            .addComponent(jScrollPane1, GroupLayout.DEFAULT_SIZE, 361, Short.MAX_VALUE)
         );
 
         pack();
         
-        console.addKeyListener(new KeyAdapter() {
+        consoleArea.addKeyListener(new KeyAdapter() {
             public void keyPressed(KeyEvent evt) {
 					consoleKeyTyped(evt);
             }
@@ -63,18 +68,19 @@ public class ConsoleGui extends JFrame {
     }
 	private void consoleKeyTyped(KeyEvent evt){
     	if(evt.getKeyCode()==KeyEvent.VK_ENTER) {
-    		String lastLine = null;
+    		String line = null;
 			try {
-				lastLine = console.getText(lastCommandPosition, console.getDocument().getLength()-lastCommandPosition);
+				line = consoleArea.getText(lastCommandPosition, consoleArea.getDocument().getLength()-lastCommandPosition);
 			} catch (BadLocationException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+				throw new RuntimeException(e);
 			}
-    		lastCommandPosition = console.getCaretPosition()+1;
-    		System.out.println(lastLine);	//@REMOVE
+    		lastCommandPosition = consoleArea.getCaretPosition()+1;
+    		System.out.println(line);	//@REMOVE
+    		
+    		console.exe(line);
     	}
     }
-    /**
+    /** TEMPORARLY
      * @param args the command line arguments
      */
     public static void main(String args[]) {

@@ -5,6 +5,12 @@ import java.util.Map;
 
 public class Console {
 
-	private Map<String, ConsoleCommand> consoleCommands = new HashMap<String, ConsoleCommand>();
+	private static Map<String, ConsoleCommand> consoleCommands = new HashMap<String, ConsoleCommand>();
+	
+	
+	
+	public void exe(String commandLine) {
+		
+	}
 	
 }
