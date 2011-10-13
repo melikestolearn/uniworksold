@@ -1,0 +1,3 @@
+1)
+a) Der Browser benutzt HTTP 1.1
+b) ĥttp://hardware.slashdot.org/story/11/09/18141232/The-Letter-That-Started-AMDs-Open-Source-Strategy
