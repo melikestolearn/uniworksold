@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="31" version="2.0">
+<workbench progressCount="25" version="2.0">
 <workbenchAdvisor/>
 <window height="768" maximized="true" width="1024" x="149" y="0">
 <fastViewData fastViewLocation="1024"/>
@@ -33,42 +33,25 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
-<part id="2"/>
-<part id="3"/>
-<part id="4"/>
-<part id="5"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Connector.java" partName="Connector.java" path="C:/Users/Elias/uniworks/java/common/Unicore/src/connection/Connector.java" title="Connector.java" tooltip="Unicore/src/connection/Connector.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Unicore/src/connection/Connector.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="474" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EchoServer.java" partName="EchoServer.java" path="C:/Users/Elias/uniworks/java/common/Servers/src/pack/EchoServer.java" title="EchoServer.java" tooltip="Servers/src/pack/EchoServer.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Servers/src/pack/EchoServer.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="650" selectionTopPixel="5"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" partName="Main.java" path="C:/Users/Elias/uniworks/java/common/Unicore/src/main/Main.java" title="Main.java" tooltip="Unicore/src/main/Main.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Unicore/src/main/Main.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="435" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Base.java" partName="Base.java" path="C:/Users/Elias/uniworks/java/common/Unicore/src/main/Base.java" title="Base.java" tooltip="Unicore/src/main/Base.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Unicore/src/main/Base.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="809" selectionTopPixel="43"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ConsoleGui.java" partName="ConsoleGui.java" path="C:/Users/Elias/uniworks/java/common/Unicore/src/gui/console/ConsoleGui.java" title="ConsoleGui.java" tooltip="Unicore/src/gui/console/ConsoleGui.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Unicore/src/gui/console/ConsoleGui.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2619" selectionTopPixel="740"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Console.java" partName="Console.java" path="C:/Users/Elias/uniworks/java/common/Unicore/src/console/Console.java" title="Console.java" tooltip="Unicore/src/console/Console.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Unicore/src/console/Console.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="251" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ConsoleCommand.java" partName="ConsoleCommand.java" path="C:/Users/Elias/uniworks/java/common/Unicore/src/console/ConsoleCommand.java" title="ConsoleCommand.java" tooltip="Unicore/src/console/ConsoleCommand.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Unicore/src/console/ConsoleCommand.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="72" selectionTopPixel="0"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EchoClient.java" partName="EchoClient.java" path="C:/Users/Elias/uniworks/java/common/Servers/src/pack/EchoClient.java" title="EchoClient.java" tooltip="Servers/src/pack/EchoClient.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Servers/src/pack/EchoClient.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="431" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<expanded>
+<category IMemento.internal.id="Warnings (6 items)"/>
+</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -130,7 +113,7 @@
 <view id="org.eclipse.jdt.ui.SourceView" partName="Declaration"/>
 <view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jdt.internal.ui.JavaPerspectiveFactory" id="org.eclipse.jdt.ui.JavaPerspective" label="Java"/>
 <alwaysOnActionSet id="org.eclipse.egit.ui.navigation"/>
@@ -264,163 +247,32 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Unicore/src/gui/console/ConsoleGui.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Unicore/src/main/Base.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Unicore/src/console/Console.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Unicore/src/console/ConsoleCommand.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Unicore/src/main/Main.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Unicore/src/gui/console/ConsoleGui.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Unicore/src/console/ConsoleCommand.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Servers/src/pack/EchoServer.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Servers/src/pack/EchoClient.java"/>
 </editors>
-<item historyLabel="ConsoleGui.java" index="0">
-<position info="not_deleted" x="682" y="0"/>
+<item historyLabel="EchoServer.java" index="0">
+<position info="not_deleted" x="261" y="0"/>
 </item>
-<item historyLabel="Base.java" index="1">
-<position info="not_deleted" x="871" y="0"/>
+<item historyLabel="EchoClient.java" index="1">
+<position info="not_deleted" x="1219" y="0"/>
 </item>
-<item historyLabel="Base.java" index="1">
-<position info="not_deleted" x="842" y="0"/>
+<item historyLabel="EchoServer.java" index="0">
+<position info="not_deleted" x="261" y="0"/>
 </item>
-<item historyLabel="Base.java" index="1">
-<position info="not_deleted" x="227" y="0"/>
+<item historyLabel="EchoServer.java" index="0">
+<position info="not_deleted" x="739" y="0"/>
 </item>
-<item historyLabel="Base.java" index="1">
-<position info="not_deleted" x="211" y="7"/>
+<item historyLabel="EchoServer.java" index="0">
+<position info="not_deleted" x="650" y="0"/>
 </item>
-<item historyLabel="Base.java" index="1">
-<position info="not_deleted" x="227" y="0"/>
-</item>
-<item historyLabel="Base.java" index="1">
-<position info="not_deleted" x="809" y="0"/>
-</item>
-<item historyLabel="ConsoleGui.java" index="0">
-<position info="not_deleted" x="682" y="0"/>
-</item>
-<item historyLabel="Console.java" index="2">
-<position info="not_deleted" x="263" y="0"/>
-</item>
-<item historyLabel="ConsoleGui.java" index="0">
-<position info="not_deleted" x="2260" y="0"/>
-</item>
-<item historyLabel="Console.java" index="2">
-<position info="not_deleted" x="263" y="0"/>
-</item>
-<item historyLabel="ConsoleCommand.java" index="3">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="ConsoleGui.java" index="0">
+<item historyLabel="EchoClient.java" index="1">
 <position/>
 </item>
-<item historyLabel="Console.java" index="2">
-<position info="not_deleted" x="263" y="0"/>
+<item historyLabel="EchoServer.java" index="0">
+<position info="not_deleted" x="650" y="0"/>
 </item>
-<item historyLabel="Console.java" index="2">
-<position info="not_deleted" x="244" y="0"/>
-</item>
-<item historyLabel="ConsoleGui.java" index="0">
+<item active="true" historyLabel="EchoClient.java" index="1">
 <position/>
-</item>
-<item historyLabel="Console.java" index="2">
-<position info="not_deleted" x="251" y="0"/>
-</item>
-<item historyLabel="ConsoleGui.java" index="0">
-<position/>
-</item>
-<item historyLabel="Console.java" index="2">
-<position info="not_deleted" x="251" y="0"/>
-</item>
-<item historyLabel="ConsoleGui.java" index="0">
-<position/>
-</item>
-<item historyLabel="Console.java" index="2">
-<position info="not_deleted" x="216" y="0"/>
-</item>
-<item historyLabel="ConsoleGui.java" index="0">
-<position/>
-</item>
-<item historyLabel="ConsoleGui.java" index="0">
-<position info="not_deleted" x="2119" y="0"/>
-</item>
-<item historyLabel="Console.java" index="2">
-<position info="not_deleted" x="216" y="0"/>
-</item>
-<item historyLabel="Console.java" index="2">
-<position info="not_deleted" x="251" y="0"/>
-</item>
-<item historyLabel="Console.java" index="2">
-<position info="not_deleted" x="258" y="0"/>
-</item>
-<item historyLabel="ConsoleGui.java" index="0">
-<position info="not_deleted" x="2119" y="0"/>
-</item>
-<item historyLabel="ConsoleGui.java" index="0">
-<position info="not_deleted" x="2257" y="0"/>
-</item>
-<item historyLabel="Console.java" index="2">
-<position info="not_deleted" x="251" y="0"/>
-</item>
-<item historyLabel="ConsoleCommand.java" index="3">
-<position info="not_deleted" x="72" y="0"/>
-</item>
-<item historyLabel="ConsoleGui.java" index="0">
-<position info="not_deleted" x="2260" y="0"/>
-</item>
-<item historyLabel="Console.java" index="2">
-<position info="not_deleted" x="204" y="0"/>
-</item>
-<item historyLabel="ConsoleGui.java" index="0">
-<position info="not_deleted" x="2243" y="0"/>
-</item>
-<item historyLabel="Console.java" index="2">
-<position info="not_deleted" x="217" y="0"/>
-</item>
-<item historyLabel="ConsoleGui.java" index="0">
-<position info="not_deleted" x="2243" y="0"/>
-</item>
-<item historyLabel="Console.java" index="2">
-<position info="not_deleted" x="217" y="0"/>
-</item>
-<item historyLabel="ConsoleGui.java" index="0">
-<position info="not_deleted" x="668" y="0"/>
-</item>
-<item historyLabel="Console.java" index="2">
-<position info="not_deleted" x="217" y="0"/>
-</item>
-<item historyLabel="Base.java" index="1">
-<position info="not_deleted" x="809" y="0"/>
-</item>
-<item historyLabel="Main.java" index="4">
-<position info="not_deleted" x="435" y="0"/>
-</item>
-<item historyLabel="Base.java" index="1">
-<position info="not_deleted" x="809" y="0"/>
-</item>
-<item historyLabel="ConsoleGui.java" index="0">
-<position info="not_deleted" x="668" y="0"/>
-</item>
-<item historyLabel="Console.java" index="2">
-<position info="not_deleted" x="217" y="0"/>
-</item>
-<item historyLabel="ConsoleCommand.java" index="3">
-<position info="not_deleted" x="72" y="0"/>
-</item>
-<item historyLabel="ConsoleGui.java" index="0">
-<position info="not_deleted" x="2619" y="0"/>
-</item>
-<item historyLabel="Console.java" index="2">
-<position info="not_deleted" x="217" y="0"/>
-</item>
-<item historyLabel="ConsoleGui.java" index="5">
-<position info="not_deleted" x="2619" y="0"/>
-</item>
-<item historyLabel="Console.java" index="2">
-<position info="not_deleted" x="251" y="0"/>
-</item>
-<item historyLabel="ConsoleCommand.java" index="6">
-<position info="not_deleted" x="72" y="0"/>
-</item>
-<item active="true" historyLabel="Console.java" index="2">
-<position info="not_deleted" x="251" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -440,6 +292,12 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EchoClient.java" tooltip="Servers/src/pack/EchoClient.java">
+<persistable path="/Servers/src/pack/EchoClient.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EchoServer.java" tooltip="Servers/src/pack/EchoServer.java">
+<persistable path="/Servers/src/pack/EchoServer.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ConsoleCommand.java" tooltip="Unicore/src/console/ConsoleCommand.java">
 <persistable path="/Unicore/src/console/ConsoleCommand.java"/>
 </file>
