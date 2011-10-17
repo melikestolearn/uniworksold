@@ -1,0 +1,44 @@
+public class Tic {
+	private char[] fields = new char[9];
+		public Tic(){
+			for(int count = 0;count <= fields.length-1;count++)
+				fields[count] = ' ';
+			printField();
+		}
+		public void main(String[] args){
+			
+			setField('x',1,1);
+			setField('x',2,1);
+			printField();
+			System.out.println(checkWin());
+			setField('x',3,1);
+			System.out.println(checkWin());
+			printField();
+		}
+		public void setField(char symbol,int colum,int row){
+			if(row == 2)
+				colum = colum + 3;
+			else if(row == 3)
+				colum = colum + 6;
+			fields[colum-1] = symbol;
+		}
+		public boolean checkWin(){
+			return (checkThreeFields(0,1,2)||checkThreeFields(0,3,6)||checkThreeFields(2,5,8)||
+					checkThreeFields(6,7,8)||checkThreeFields(0,4,8)||checkThreeFields(1,4,7)||
+					checkThreeFields(2,4,6)||checkThreeFields(4,5,6));	
+		}
+		
+		// checks if three fields got the same char in it
+		public boolean checkThreeFields(int i,int j,int k){
+			if(fields[i]==' ')
+				return false;
+			return ((fields[i]==fields[j])&&fields[i]==fields[k]);
+		}
+		public void printField(){
+			System.out.println(fields[0] + "|" + fields[1] + "|" + fields[2] + "\n" +
+					"_|_|_\n" +
+					fields[3] + "|" + fields[4] + "|" + fields[5] + "\n" +
+					"_|_|_\n" +
+					fields[6] + "|" + fields[7] + "|" + fields[8] + "\n");
+		}
+}
