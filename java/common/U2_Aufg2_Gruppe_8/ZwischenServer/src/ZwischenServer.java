@@ -21,9 +21,7 @@ public class ZwischenServer {
 	public ZwischenServer() throws IOException{
 		File paramfile = new File("/home/tobi/uniworks/netzwerke/UE2/Parameter.txt");
 		if(paramfile.canRead()){
-			InputStream paramIs = new FileInputStream(paramfile);
-			InputStreamReader paramIsr = new InputStreamReader(paramIs);
-			BufferedReader paramBr = new BufferedReader(paramIsr);
+			BufferedReader paramBr = new BufferedReader(new InputStreamReader(new FileInputStream(paramfile)));
 			th = paramBr.readLine();
 			content = th.substring(th.indexOf(' ', 0), th.length());
 			th = th.substring(0, th.indexOf(' ', 0));
