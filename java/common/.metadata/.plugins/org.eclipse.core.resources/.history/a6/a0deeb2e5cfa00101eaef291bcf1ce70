@@ -1,0 +1,5 @@
+package console;
+
+public class Test extends ConsoleCommand {
+
+}

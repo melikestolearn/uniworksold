@@ -1,0 +1,12 @@
+package console;
+
+public class ConsoleCommand extends Thread {
+	
+	private String[] objects;
+	
+	protected ConsoleCommand() {
+		super();
+	}
+	
+	
+}

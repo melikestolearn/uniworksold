@@ -1,0 +1,17 @@
+package console;
+
+public class EstConnection implements ConsoleCommand {
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void exec() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

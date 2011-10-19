@@ -12,13 +12,13 @@ import java.net.UnknownHostException;
 import main.Base;
 
 public class Connector {
+	public static final int defaultPort = 22841;
 
 	private final Base base;
 	
 	private Socket friendSocket;
 	
-	private final int defaultPort;
-	private int realPort;
+	private int usedPort;
 
 	private InputStream input;
 	private OutputStream output;
@@ -26,7 +26,6 @@ public class Connector {
 	private BufferedReader myKeyboardReader;
 	
 	public Connector(Base b, InputStream myInput) {
-		defaultPort = 810;
 		myKeyboardReader = new BufferedReader(new InputStreamReader(myInput));
 		base = b;
 	}

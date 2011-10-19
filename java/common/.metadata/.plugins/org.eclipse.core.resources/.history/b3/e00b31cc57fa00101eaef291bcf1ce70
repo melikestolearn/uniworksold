@@ -1,0 +1,42 @@
+package console;
+
+import java.io.IOException;
+
+import main.Base;
+
+public class EstConnection extends ConsoleCommand {
+
+	public EstConnection(Base b) {
+		super(b);
+	}
+	
+	public void run() {
+		try {
+		String in1;
+		
+		boolean gotInput = false;
+		while(!gotInput) {
+			in1 = objects[1];
+			String[] tokens = in1.split("\\s+");
+			String com = tokens[0].toLowerCase();
+			
+			if(com.equals("connect")) {
+				if(tokens.length<2)
+					throw new Exception("Illegal command.");
+				
+				base.getConnector().connect(tokens[1]);
+				gotInput = true;
+			}
+			else if(com.equals("host")) {
+				base.getConnector().host();
+				gotInput = true;
+			}
+		}
+		}
+		catch(Exception ex) {
+			throw new RuntimeException();
+		}
+	}
+	
+
+}

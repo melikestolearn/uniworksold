@@ -1,5 +1,24 @@
 package console;
 
-public interface ConsoleCommand extends Runnable {
+import main.Base;
 
+public class ConsoleCommand extends Thread {
+	
+	protected String[] args;
+	
+	protected final Base base;
+	
+	protected ConsoleCommand(Base b) {
+		super();
+		base = b;
+	}
+	
+	protected void loadObjects() {
+		args =  base.getConsole().getArgs();
+	}
+	
+	public void run() {
+		loadObjects();
+	}
+	
 }

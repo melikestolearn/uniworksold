@@ -1,0 +1,7 @@
+package console;
+
+public interface ConsoleCommand extends Runnable {
+
+	public void exec();
+	
+}
