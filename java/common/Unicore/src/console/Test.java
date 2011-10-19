@@ -9,7 +9,9 @@ public class Test extends ConsoleCommand {
 	}
 	
 	public void run() {
-		 System.out.println("TEST SUCCESFULL");
+		super.run();
+		
+		System.out.println("TEST SUCCESFULL");
 	}
 	
 }

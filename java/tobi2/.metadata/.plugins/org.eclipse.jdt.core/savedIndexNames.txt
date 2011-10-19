@@ -1,16 +1,9 @@
-INDEX VERSION 1.126+/home/tobi/uniworks/java/tobi2/.metadata/.plugins/org.eclipse.jdt.core
-2596048936.index
-1189062746.index
-1654635368.index
-1393721363.index
-516116778.index
-2686503099.index
-1445151894.index
-925624498.index
-1796948596.index
-1193566714.index
-737766193.index
-3223902160.index
-2889915287.index
-2040264796.index
-406065318.index
+INDEX VERSION 1.126+C:\Users\Elias\uniworks\java\tobi2\.metadata\.plugins\org.eclipse.jdt.core
+1797912458.index
+1562797933.index
+288844497.index
+3093497435.index
+1764260089.index
+1406863405.index
+3900311061.index
+2097304735.index
