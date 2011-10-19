@@ -1,0 +1,28 @@
+package console;
+
+import gui.console.ConsoleGui;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import main.Base;
+
+public class Console {
+
+	private static Map<String, ConsoleCommand> consoleCommands = new HashMap<String, ConsoleCommand>();
+	
+	private final Base base;
+	
+	private final ConsoleGui gui;
+	
+	public Console(Base b) {
+		base = b;
+		gui = new ConsoleGui(base);
+		
+	}
+	
+	public void exe(String commandLine) {
+		
+	}
+	
+}

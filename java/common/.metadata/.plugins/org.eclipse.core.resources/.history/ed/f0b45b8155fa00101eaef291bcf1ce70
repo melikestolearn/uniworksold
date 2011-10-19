@@ -1,0 +1,10 @@
+package console;
+
+public class EstConnection extends ConsoleCommand {
+
+	@Override
+	public void run() {
+		
+	}
+
+}

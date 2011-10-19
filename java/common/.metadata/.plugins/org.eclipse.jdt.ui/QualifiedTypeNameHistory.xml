@@ -12,4 +12,7 @@
 <fullyQualifiedTypeName name="console.Console"/>
 <fullyQualifiedTypeName name="java.io.Console"/>
 <fullyQualifiedTypeName name="java.lang.reflect.Constructor"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="console.EstConnection"/>
+<fullyQualifiedTypeName name="console.Test"/>
 </qualifiedTypeNameHistroy>

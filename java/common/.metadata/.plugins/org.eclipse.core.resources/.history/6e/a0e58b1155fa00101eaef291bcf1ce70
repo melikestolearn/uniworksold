@@ -1,0 +1,19 @@
+package console;
+
+public class ConsoleCommand extends Thread {
+	
+	private String[] objects;
+	
+	private final Base base;
+	
+	protected ConsoleCommand(Base b) {
+		super();
+		base = b;
+	}
+	
+	private void loadObjects() {
+		
+	}
+	
+	
+}

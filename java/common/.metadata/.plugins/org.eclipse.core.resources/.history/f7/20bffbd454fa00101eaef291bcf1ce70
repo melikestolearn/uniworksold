@@ -1,0 +1,8 @@
+package console;
+
+public class ConsoleCommand extends Thread {
+	
+	Object
+	
+	private abstract
+}

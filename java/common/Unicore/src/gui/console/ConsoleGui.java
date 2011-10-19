@@ -28,9 +28,10 @@ public class ConsoleGui extends JFrame {
     
     /** Creates new form Console */
     public ConsoleGui(Base b) {
-        initComponents();
-        base = b;
-        console = base.getConsole();
+    	base = b;
+    	console = base.getConsole();	//check if right
+    	initComponents();
+        
     }
 
     private void initComponents() {
@@ -65,31 +66,39 @@ public class ConsoleGui extends JFrame {
 					consoleKeyTyped(evt);
             }
         });
+        
+        setVisible(true);
     }
 	private void consoleKeyTyped(KeyEvent evt){
     	if(evt.getKeyCode()==KeyEvent.VK_ENTER) {
-    		String line = null;
-			try {
-				line = consoleArea.getText(lastCommandPosition, consoleArea.getDocument().getLength()-lastCommandPosition);
-			} catch (BadLocationException e) {
-				throw new RuntimeException(e);
-			}
-    		lastCommandPosition = consoleArea.getCaretPosition()+1;
-    		System.out.println(line);	//@REMOVE
-    		
-    		console.exe(line);
+    		inputHandler();
     	}
     }
-    /** TEMPORARLY
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-
-            public void run() {
-                new ConsoleGui(new Base()).setVisible(true);
-            }
-        });
-    }
+	
+	private void inputHandler() {
+		String line = null;
+		try {
+			line = consoleArea.getText(lastCommandPosition, consoleArea.getDocument().getLength()-lastCommandPosition);
+		} catch (BadLocationException e) {
+			throw new RuntimeException(e);
+		}
+		lastCommandPosition = consoleArea.getCaretPosition()+1;
+		
+		System.out.println(line);	//@REMOVE
+		
+		console.exe(line.split("\\s+"));
+	}
+	
+//    /** TEMPORARLY
+//     * @param args the command line arguments
+//     */
+//    public static void main(String args[]) {
+//        /* Create and display the form */
+//        java.awt.EventQueue.invokeLater(new Runnable() {
+//
+//            public void run() {
+//                new ConsoleGui(new Base()).setVisible(true);
+//            }
+//        });
+//    }
 }

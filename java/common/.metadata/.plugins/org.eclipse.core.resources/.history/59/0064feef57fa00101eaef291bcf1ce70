@@ -1,0 +1,26 @@
+package console;
+
+import main.Base;
+
+public class ConsoleCommand extends Thread {
+	
+	protected String[] objects;
+	
+	protected final Base base;
+	
+	protected ConsoleCommand(Base b) {
+		super();
+		base = b;
+		synchronized(base) {
+			loadObjects();
+		}
+	}
+	
+	protected void loadObjects() {
+		objects =  base.getConsole().getObjects();
+	}
+	
+	public void run() { }
+	
+	
+}

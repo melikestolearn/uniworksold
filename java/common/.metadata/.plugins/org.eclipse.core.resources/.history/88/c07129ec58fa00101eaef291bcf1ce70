@@ -1,0 +1,40 @@
+package console;
+
+import gui.console.ConsoleGui;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import main.Base;
+
+public class Console {
+
+	private final Map<String, ConsoleCommand> consoleCommands = new HashMap<String, ConsoleCommand>();
+	
+	{
+		consoleCommands.put("EstablishConnection", new EstConnection(base));
+	}
+	
+	private final Base base;
+	
+	private final ConsoleGui gui;
+	
+	private String[] objects = new String[10];
+	
+	public Console(Base b) {
+		base = b;
+		gui = new ConsoleGui(base);
+		
+	}
+	
+	
+	
+	public synchronized void exe(String commandLine) {
+		consoleCommands.get(commandLine).start();
+	}
+	
+	public String[] getObjects() {
+		return objects;
+	}
+	
+}
